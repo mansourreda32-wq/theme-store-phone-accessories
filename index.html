@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Store | Phone Accessories</title>
+    <meta
+      name="description"
+      content="Theme Store offers premium phone accessories, cases, chargers, audio gear, and smart essentials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-mark">T</div>
+          <span>Theme Store</span>
+        </div>
+
+        <nav class="menu" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#categories">Categories</a>
+          <a href="#deals">Deals</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="ghost-btn">Sign in</button>
+          <button class="cart-btn" aria-label="Shopping cart">
+            Cart <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Smart upgrades for everyday life</p>
+            <h1>Upgrade your phone with essentials that match your style.</h1>
+            <p class="subtitle">
+              Browse premium cases, chargers, audio gear, mounts, and protection accessories designed for faster,
+              better everyday use.
+            </p>
+
+            <div class="cta-row">
+              <a href="#shop" class="primary-btn">Shop accessories</a>
+              <a href="#categories" class="secondary-btn">Explore categories</a>
+            </div>
+
+            <ul class="trust-list" aria-label="Store benefits">
+              <li>Free shipping over $35</li>
+              <li>2-year warranty</li>
+              <li>30-day returns</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured accessories display">
+            <div class="product-showcase">
+              <div class="showcase-card main-card">
+                <span class="tag">Best Seller</span>
+                <img
+                  src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=900&q=80"
+                  alt="Wireless earbuds"
+                />
+                <div class="card-meta">
+                  <div>
+                    <h3>Halo Earbuds</h3>
+                    <p>Noise cancelling • 40h battery</p>
+                  </div>
+                  <strong>$89</strong>
+                </div>
+              </div>
+
+              <div class="mini-card mini-top">
+                <span>Fast Charge</span>
+                <strong>65W</strong>
+              </div>
+
+              <div class="mini-card mini-bottom">
+                <span>Cases</span>
+                <strong>4.9/5</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div>
+            <strong>120K+</strong>
+            <span>Happy customers</span>
+          </div>
+          <div>
+            <strong>4.8/5</strong>
+            <span>Average rating</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Support desk</span>
+          </div>
+          <div>
+            <strong>2-day</strong>
+            <span>Shipping</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Popular categories</p>
+            <h2>Everything your phone needs</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <div class="icon">🔋</div>
+              <h3>Chargers</h3>
+              <p>Power up faster with GaN, wireless, and car chargers.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">📱</div>
+              <h3>Cases</h3>
+              <p>Protective, slim, and shock-resistant armor for every device.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🎧</div>
+              <h3>Audio</h3>
+              <p>Crystal-clear earbuds and speakers built for daily listening.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🧭</div>
+              <h3>Mounts</h3>
+              <p>Secure holders for cars, desks, and life on the move.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="section alt-bg">
+        <div class="container">
+          <div class="section-head split-head">
+            <div>
+              <p class="eyebrow">Featured collection</p>
+              <h2>Buy phone accessories you’ll actually use</h2>
+            </div>
+            <a href="#" class="text-link">View more</a>
+          </div>
+
+          <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="deals" class="section promo-banner">
+        <div class="container promo-box">
+          <div>
+            <p class="eyebrow">Weekend offer</p>
+            <h2>Bundle & save up to 30% on phone essentials</h2>
+          </div>
+          <a href="#shop" class="primary-btn">Claim offer</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Customer love</p>
+            <h2>Why people keep coming back</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “The case feels premium and the wireless charger is ridiculously fast. Theme Store nailed the blend of
+                design and function.”
+              </p>
+              <strong>— Mariah H.</strong>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “I bought earbuds and a mount together and the bundle saved me money. Shipping was quick too.”
+              </p>
+              <strong>— Kelvin T.</strong>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “Easy to shop, clear product specs, and the quality is exactly what I wanted for my daily setup.”
+              </p>
+              <strong>— Aisha M.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">T</div>
+            <span>Theme Store</span>
+          </div>
+          <p>Smart accessories for the way you live, work, and connect.</p>
+        </div>
+
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li>Phone cases</li>
+            <li>Chargers</li>
+            <li>Audio gear</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <form class="newsletter">
+            <input type="email" placeholder="Email address" aria-label="Email address" />
+            <button type="button">Join</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
