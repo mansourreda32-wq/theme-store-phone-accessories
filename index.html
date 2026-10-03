@@ -158,6 +158,14 @@
             <a href="#" class="text-link">View more</a>
           </div>
 
+          <div class="product-toolbar" aria-label="Product filtering and search">
+            <label class="search-box" for="product-search">
+              <span aria-hidden="true">⌕</span>
+              <input id="product-search" type="search" placeholder="Search accessories" aria-label="Search accessories" />
+            </label>
+            <div id="category-filters" class="chip-row" aria-label="Categories"></div>
+          </div>
+
           <div id="product-grid" class="product-grid" aria-live="polite"></div>
         </div>
       </section>
@@ -239,7 +247,7 @@
           <h4>Newsletter</h4>
           <form class="newsletter">
             <input type="email" placeholder="Email address" aria-label="Email address" />
-            <button type="button">Join</button>
+            <button type="submit">Join</button>
           </form>
         </div>
       </div>
